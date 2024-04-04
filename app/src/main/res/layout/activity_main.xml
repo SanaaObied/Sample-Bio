@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFCDD3"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:src="@drawable/user3" />
+
+    <!-- TextView -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Name"
+        android:textSize="20sp" />
+
+    <!-- EditText -->
+
+    <!-- Button -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter Hobbies..."
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#673AB7"
+        android:text="Add" />
+
+    <!-- TextView -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone" />
+
+    <!-- TextView for Bio with ScrollView -->
+    <ScrollView
+        android:layout_width="371dp"
+        android:layout_height="314dp"
+        android:layout_marginBottom="25dp"
+        android:background="#5C5757"
+        android:fillViewport="true"
+        android:minWidth="300dp"
+        android:minHeight="100dp"
+        android:scrollbarSize="100dp">
+
+        <TextView
+            android:id="@+id/bioTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:maxWidth="100dp"
+            android:minWidth="100dp"
+            android:padding="16dp"
+            android:textColor="#673AB7"
+            android:textSize="20sp" />
+    </ScrollView>
+
+</LinearLayout>
